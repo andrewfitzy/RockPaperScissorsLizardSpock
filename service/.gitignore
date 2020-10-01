@@ -1,0 +1,8 @@
+# ignore everythig in the .idea folder
+.idea/**/*
+
+# don't commit all the library files node needs
+node_modules/**/*
+
+# all the output from doing a build, should always be generated so dont commit
+build/
