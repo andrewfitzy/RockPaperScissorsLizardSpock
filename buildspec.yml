@@ -9,13 +9,16 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Build started on `date`
       - cd $CODEBUILD_SRC_DIR/service
       - npm install
       - npm run build
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo Build completed
 artifacts:
   files:
     - build/**/*
+    - node_modules/**/*
+    - .babelrc
+    - LICENSE
+    - README.md
