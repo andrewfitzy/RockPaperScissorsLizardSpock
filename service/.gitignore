@@ -6,3 +6,6 @@ node_modules/**/*
 
 # all the output from doing a build, should always be generated so dont commit
 build/
+
+# local bootstrap files for exploritory testing.
+local/
